@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <img src="./img/img.png" alt="" width="354px" height="294px">
+    <img src="./img/img@2x.png" alt="" width="354px" height="294px">
+    <img src="./img/img@3x.png" alt="" width="354px" height="294px"> -->
+    
+    
+    <!-- <div class="box"></div> -->
+
+
+    <img
+    srcset="img.png 1x, img@2x.png 2x, img@3x.png 3x" 
+    src="img.png" 
+    alt="">
+
+
+    <picture>
+        <source srcset="img.png 1x, img@2x.png 2x, img@3x.png 3x" type="image/png">
+        <source srcset="img.webp 1x, img@2x.webp 2x, img@3x.webp 3x" type="image/webp">
+        <img src="img.png" alt="img">
+    </picture>
+
+    <picture>
+        <source srcset="img.png" media="(min-wdth: 400px)">
+        <source srcset="img@2x.png" media="(min-wdth: 900px)">
+        <img src="img.png" alt="img">    
+    </picture>
+</body>
+</html>
